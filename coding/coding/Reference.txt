@@ -1,0 +1,30 @@
+Question: What is a program Counter?
+Question: What is an instruction register?
+
+microcode is in hex
+addresses are included
+addresses of next instruction to execute are included
+
+Read and Execute Instruction OP-Codes:
+ Read a byte from memory and put it into the Instruction Register
+ -Do nothing
+ -Put the Program Counter register value into the MAR
+ -uc.mar.we falling
+ 
+ Register 5 is the Instruction Register
+ 
+Add 1 to Program Counter
+
+
+uc_addr_mux[1]
+-Determines what microcode instructions will be put into the muxes
+- i0= 0-3 (uc[0]-uc[3]) refers to the LSB's (right-most bits) in the microcode
+
+Risc 5
+-3 register machine
+-40 instructions
+-2 add instructions
+ -add
+ -addi
+-Each instruction ends with pc=pc+4 because the instructions are 4 bytes long
+ 
