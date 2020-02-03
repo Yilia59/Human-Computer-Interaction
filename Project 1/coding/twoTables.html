@@ -1,0 +1,52 @@
+<html >
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script src="assign2.js"></script>
+  <link href="admission.css" rel="stylesheet" media="screen" type="text/css">
+
+  <title>Table Comparison</title>                                                                                             
+</head>
+
+<body>
+	<!--title space-->
+	<div class="toptitle">
+	  <h1><center>Compare Content of Two Tables</h1>                                        
+	</div>		
+
+	<div class = "split left">                                                              
+	  <div class = "centered">                                                              
+		Table A <br>                                                                                                  
+		---------------------<br>
+		row (1 - 15) <input type="text" id="rowA" value = "4">                              
+		column (1 - 15)  <input type="text" id="columnA" value="6">                         
+		
+		<br><br><br><br><br>
+		Table B<br>                                                                         
+		---------------------<br>
+		row (1 - 15) <input type="text" id="rowB" value="7">                                
+		column (1 - 15) <input type="text" id="columnB" value="5">                          
+		<br><br><br>
+		<button id = "submit" type="button" onclick="getValue()">Submit</button>            
+			  
+	  </div>                                                                                
+	</div>
+	
+	<div class = "split right ">                                                            
+	<!--one table-->
+	
+	<div class="split right tableA">                                                        
+		<p class="textcolor">Table A</p>                                                    
+		<table id="here_tableA" class="item item-2" style="cursor:pointer;" onclick="selectA()"></table>                    
+			<tr><td id="tableA-1"></td></tr>
+			
+	</div>                                                                                  
+	<!--table B-->
+	<div class="split right top tableB">                                                     
+		<p class="textcolor">Table B</p>                                                    
+		<table id="here_tableB" class="item item-2" style="cursor:pointer;" onclick="selectA()"></table>                     
+	</div>                                                                                  
+
+	</div>                                                                                  
+</body>
+</html>
